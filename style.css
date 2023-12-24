@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&family=Source+Serif+4:opsz@8..60&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  background-color: rgb(192, 185, 185);
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  transition: transform 0.1s ease-in;
+  position: relative;
+}
+
+.sidebar a:hover {
+  color: red; /* Change the text color to red on hover */
+}
+
+.sidebar nav {
+  padding: 56px;
+  padding-top: 33px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 20px;
+  padding: 21px 0px;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow;*/
+  width: 90vw;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 27px;
+}
+
+.container {
+  display: flex;
+}
+
+.infocontainer {
+  /*background-color: rgb(28, 225, 74);*/
+  width: 80vw;
+  height: 58vh;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devinfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-family: "Source Serif 4", serif;
+}
+.devpic img {
+  height: 58vh;
+  border: 2px solid #ccc;
+  border-radius: 24%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.devpic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 4px solid #ff0000; /* Red border with increased thickness on hover */
+}
+
+
+
+
+.hello {
+  font-size: 58px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+.name {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+
+.about {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+.buttons button {
+  padding: 9px 7px;
+  border-radius: 21px;
+  color: white;
+  background-color: rgb(86, 83, 83);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 3px 1px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: rgb(86, 83, 83);
+  background-color: white;
+}
+
+/******************************contact styling ***********************************/
+#contact {
+  padding: 40px;
+}
+
+.block {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info {
+  margin: 1rem;
+  padding: 1.75rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  align-items: center;
+  text-align: justify;
+  height: auto;
+  max-width: 600px;
+  justify-content: space-around;
+}
+
+.info {
+  margin: auto;
+  padding: 5px;
+}
+
+/* Styling for the contact form */
+.contact-form {
+  padding: 36px;
+  flex-basis: 50%;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contact form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/************************ About***************************************/
+
+.devinfo ul p {
+  font-size: 16px;
+}
+
+.devinfo ul {
+  padding: 5px;
+}
+
+.devinfo b {
+  font-size: 20px;
+}
+
+.sidebargo {
+  transform: translate(-500px, 0px);
+  position: absolute;
+}
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+
+.cross {
+  margin-left: 184px;
+  margin-top: 10px;
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.exp,.edu {
+  border-radius: 24px;
+  margin: 15px;
+  padding: 28px;
+  border: 2px solid black;
+}
+
+.exp p{
+  padding: 2px;
+}
+@media (max-width: 805px) {
+  .devpic {
+    display: none;
+  }
+
+  /*   .sidebar{
+        transform: translate(-500px, 0px);
+        position: absolute;
+    } */
+}
+
+/**************************** researvh *******************************/
+
+.researchinfo {
+  border: 2px solid #000; 
+  padding: 25px;
+  border-radius: 25px; 
+  flex-direction: column;
+  display: flex;
+  border-color: rgb(51, 54, 52);
+}
+
+.researchcontainer {
+  /* background-color: rgb(28, 225, 74); */
+  width: 80vw;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.researchpic {
+  padding: 10px;
+  margin-right: -25px;
+  
+}
+
+.links {
+  border: 2px solid #5c5a5a; 
+  padding: 16px; 
+  margin-top: 20px; 
+  border-radius: 20px;
+  
+}
+.links {
+  border: 2px solid #5c5a5a; 
+  padding: 16px; 
+  margin-top: 20px; 
+  border-radius: 20px;
+}
+
+.links a {
+  color: #007bff; 
+  text-decoration: none; 
+}
+
+.links a:hover {
+  text-decoration: underline; 
+}
+
+.researchinfo h2 {
+  text-align: center;
+
+}
+
+.researchpic img {
+  height: 58vh;
+  border: 2px solid #ccc;
+  border-radius: 24%;
+}
+.researchblock {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 900) {
+  .researchpic {
+    display: none;
+  }
+
+  .researchinfo {
+    border: 2px solid #000;
+    padding: 25px;
+    border-radius: 25px; 
+    flex-direction: column;
+    display: flex;
+    border-color: rgb(0, 255, 30);
+  }
+
+
+}
+@media (max-width: 1000px) {
+  .researchpic {
+    display: none;
+  }
+
+  .researchinfo {
+    margin-right: 45px;
+    margin: 14px 55px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 15px 14px;
+    border-radius: 15px;
+    font-size: 8px;
+}
+}
+
+
+/************************************************publications **************************************************/
+.main-pub {
+  width: 96vw;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 9px;
+}
+.pubcontainer {
+  /*background-color: rgb(28, 225, 74);*/
+  width: 80vw;
+  height: 58vh;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.journal {
+  margin: 39px;
+  border: 2px solid black;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.conference {
+  margin: 39px;
+  border: 2px solid black;
+  padding: 37px;
+  border-radius: 24px;
+}
+
+.journal li {
+  margin: 10px;
+}
+
+/*********************************teaching courses**********************************/
+.teaching-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.teaching {
+  text-align: center;
+}
+
+.current-courses {
+  margin: 20px;
+  padding: 20px 300px; 
+  border: 2px solid black;
+  border-radius: 23px;
+}
+.past-courses {
+  margin: 20px;
+  padding: 20px 320px; 
+  border: 2px solid black;
+  border-radius: 23px;
+}
+
+/* Responsive styles */
+@media (max-width: 805px) {
+  .current-courses,
+  .past-courses {
+    padding: 20px; 
+  }
+}
+
+/********************************************** Gallery***********************************************/
+
+#gallery {
+  padding: 40px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.photo {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photo_spe {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .photo-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
